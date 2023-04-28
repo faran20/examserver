@@ -56,11 +56,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User updateUser(User user, Long userId) {
 		// TODO Auto-generated method stub
-		
-		User oldUser = this.userRepository.findById(userId);
-		
-		this.userRepository.save(user);
-		return null;
+		user.setUserId(userId);
+		return this.userRepository.save(user);
 	}
 
 }

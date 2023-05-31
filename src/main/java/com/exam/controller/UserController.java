@@ -37,6 +37,7 @@ public class UserController {
 		
 		System.out.println(user);
 		
+		user.setProfile("default.png");
 		Set<UserRole> userRoleSet = new HashSet<>();
 
 		// For user Role set we need ROLE

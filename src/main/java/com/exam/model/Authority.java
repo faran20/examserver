@@ -3,7 +3,6 @@ package com.exam.model;
 import org.springframework.security.core.GrantedAuthority;
 
 public class Authority implements GrantedAuthority {
-	
 	private String authority;
 
 	public Authority(String roleName) {
@@ -18,6 +17,4 @@ public class Authority implements GrantedAuthority {
 	public String getAuthority() {
 		return this.authority;
 	}
-	
-	
 }
